@@ -1,0 +1,426 @@
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.service {
+  background: #f8f9fa;
+}
+
+.service .text-secondary {
+  color: #ff5e14 !important;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.service h2 {
+  color: #182333;
+  font-weight: 700;
+}
+
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.service-item {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   SERVICE IMAGE
+========================= */
+
+.service-img {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-item:hover .service-img img {
+  transform: scale(1.08);
+}
+
+
+/* =========================
+   BOTTOM TITLE
+========================= */
+
+.service-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 80px;
+
+  background: #ffffff;
+  color: #182333;
+
+  transition: all 0.4s ease;
+}
+
+.service-title h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #182333;
+}
+
+
+/* ICON BOX */
+
+.service-title .btn-xl-square {
+  min-width: 80px;
+  width: 80px !important;
+  height: 80px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff5e14 !important;
+}
+
+.service-title i {
+  color: #ffffff !important;
+}
+
+
+/* =========================
+   HOVER CONTENT
+========================= */
+
+.service-content {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(24, 35, 51, 0.96);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(30px);
+
+  transition: all 0.4s ease;
+
+  z-index: 5;
+}
+
+
+/* SHOW CONTENT ON HOVER */
+
+.service-item:hover .service-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+/* LARGE ICON */
+
+.service-content .btn-xl-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #ff5e14 !important;
+
+  margin-bottom: 10px;
+}
+
+.service-content .btn-xl-square i {
+  color: #ffffff !important;
+}
+
+
+/* SERVICE NAME */
+
+.service-content > a.fs-4 {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.service-content > a.fs-4:hover {
+  color: #ff5e14;
+}
+
+
+/* DESCRIPTION */
+
+.service-content p {
+  color: #dddddd !important;
+  max-width: 300px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.service .btn-secondary {
+  background: #ff5e14;
+  border-color: #ff5e14;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.service .btn-secondary:hover {
+  background: #182333;
+  border-color: #182333;
+  color: #ffffff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+  .service-img {
+    height: 250px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .service {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .service h2 {
+    font-size: 30px;
+  }
+
+  .service-img {
+    height: 230px;
+  }
+
+  .service-title h4 {
+    font-size: 18px;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .service-img {
+    height: 220px;
+  }
+
+  .service-content {
+    padding: 20px !important;
+  }
+
+  .service-content p {
+    font-size: 14px;
+  }
+
+}
+
+/* ========================================
+   PAGE HEADER
+======================================== */
+
+.page-header {
+  position: relative;
+  width: 100%;
+  min-height: 330px;
+
+  background-image: url('/img/new/carousel-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Dark overlay */
+
+.page-header-overlay {
+  width: 100%;
+  min-height: 330px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(15, 23, 32, 0.75);
+}
+
+
+/* Content */
+
+.page-header-content {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.page-title {
+  margin: 0 0 22px;
+
+  color: #ffffff;
+
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  text-transform: capitalize;
+}
+
+
+/* ========================================
+   BREADCRUMB
+======================================== */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  background: transparent;
+}
+
+
+/* Individual item */
+
+.breadcrumb-item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+
+/* Link */
+
+.breadcrumb-item a {
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+
+/* Hover */
+
+.breadcrumb-item a:hover {
+  color: #ff5e14;
+}
+
+
+/* Active */
+
+.breadcrumb-item.active {
+  color: #ff5e14;
+}
+
+
+/* Separator */
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  color: rgba(255, 255, 255, 0.7);
+
+  padding: 0 12px;
+}
+
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media (max-width: 768px) {
+
+  .page-header,
+  .page-header-overlay {
+    min-height: 270px;
+  }
+
+  .page-header-content {
+    padding: 55px 15px;
+  }
+
+  .page-title {
+    font-size: 40px;
+  }
+
+  .breadcrumb-item {
+    font-size: 15px;
+  }
+}
+
+
+/* ========================================
+   RESPONSIVE - MOBILE
+======================================== */
+
+@media (max-width: 576px) {
+
+  .page-header,
+  .page-header-overlay {
+    min-height: 220px;
+  }
+
+  .page-header-content {
+    padding: 45px 10px;
+  }
+
+  .page-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .breadcrumb-item {
+    font-size: 14px;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding: 0 8px;
+  }
+}

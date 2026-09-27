@@ -1115,3 +1115,141 @@ a {
     }
 }
 
+
+/* =========================================
+   MOBILE HEADER / NAVBAR
+========================================= */
+
+@media (max-width: 991px) {
+
+    /* Navbar overall height */
+    .navbar {
+        padding: 8px 15px !important;
+    }
+
+    /* Logo + Company Name */
+    .navbar-brand h1 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        margin: 0;
+
+        font-size: 24px !important;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    /* Logo */
+    .navbar-brand h1 img {
+        width: 50px !important;
+        height: 50px !important;
+
+        object-fit: contain;
+    }
+
+    /* Hamburger */
+    .navbar .navbar-toggler {
+        padding: 6px 11px;
+
+        font-size: 18px;
+    }
+
+    /* Menu */
+    .navbar .navbar-nav {
+        padding-top: 8px !important;
+    }
+
+    /* Menu font */
+    .navbar .navbar-nav .nav-link {
+        padding: 8px 0 !important;
+
+        font-size: 14px !important;
+        font-weight: 500;
+    }
+
+    /* Quote Button */
+    .navbar .btn-secondary {
+        padding: 8px 18px !important;
+
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 6px 10px !important;
+    }
+
+    /* Company Name */
+    .navbar-brand h1 {
+        gap: 6px;
+
+        font-size: 20px !important;
+    }
+
+    /* Logo */
+    .navbar-brand h1 img {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    /* Hamburger */
+    .navbar .navbar-toggler {
+        padding: 5px 9px;
+
+        font-size: 16px;
+    }
+
+    /* Menu Items */
+    .navbar .navbar-nav .nav-link {
+        padding: 7px 0 !important;
+
+        font-size: 13px !important;
+    }
+
+    /* Get Quote */
+    .navbar .btn-secondary {
+        padding: 7px 15px !important;
+
+        font-size: 12px !important;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .navbar-brand h1 {
+        font-size: 17px !important;
+    }
+
+    .navbar-brand h1 img {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .navbar .navbar-toggler {
+        padding: 4px 8px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 12px !important;
+    }
+}
+
+
+.header-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}

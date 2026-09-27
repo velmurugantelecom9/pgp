@@ -38,53 +38,84 @@
 <div class="container-fluid sticky-top px-0" [class.shadow-sm]="isSticky" [style.top]="isSticky ? '0px' : '-200px'">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-light py-3 px-4">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="text-secondary display-6">
-                <img src="img/logo.jpg" alt="Logo" style="width: 70px; height: 70px; object-fit: contain;">
-                PGP Constructions
-            </h1>
+       <a routerLink="/" class="navbar-brand p-0">
+    <h1 class="text-secondary display-6">
+        <img
+            src="img/logo.jpg"
+            class="header-logo"
+            alt="PGP Constructions Logo">
 
-        </a>
+        PGP Constructions
+    </h1>
+</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+       <div class="collapse navbar-collapse" id="navbarCollapse">
 
-                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
-                    class="nav-item nav-link">
-                    Home
-                </a>
+    <div class="navbar-nav ms-auto pt-2 pt-lg-0">
 
-               
+        <a routerLink="/"
+           routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: true }"
+           class="nav-item nav-link"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarCollapse">
+            Home
+        </a>
 
-                <a routerLink="/about" routerLinkActive="active" class="nav-item nav-link">
-                      About Us
-                </a>
+        <a routerLink="/about"
+           routerLinkActive="active"
+           class="nav-item nav-link"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarCollapse">
+            About Us
+        </a>
 
-                <a routerLink="/service" routerLinkActive="active" class="nav-item nav-link">
-                    Service
-                </a>
+        <a routerLink="/service"
+           routerLinkActive="active"
+           class="nav-item nav-link"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarCollapse">
+            Service
+        </a>
 
-                <a href="service.html" class="nav-item nav-link">
-                    Latest Projects
-                </a>
+        <a routerLink="/projects"
+           routerLinkActive="active"
+           class="nav-item nav-link"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarCollapse">
+            Latest Projects
+        </a>
 
-                
-<a routerLink="/package" routerLinkActive="active" class="nav-item nav-link">
-                    Our Packages
-                </a>
-               
-                 <a routerLink="/contact" routerLinkActive="active" class="nav-item nav-link">
-                   Contact
-                </a>
+        <a routerLink="/package"
+           routerLinkActive="active"
+           class="nav-item nav-link"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarCollapse">
+            Our Packages
+        </a>
 
-            </div>
-            <div class="d-flex align-items-center flex-nowrap pt-3  pt-lg-0 ms-lg-2">
-                <a
-                    class="btn btn-secondary py-2 px-4 flex-wrap flex-sm-shrink-0">Get a Quote</a>
-            </div>
-        </div>
+        <a routerLink="/contact"
+           routerLinkActive="active"
+           class="nav-item nav-link"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarCollapse">
+            Contact
+        </a>
+
+    </div>
+
+    <div class="d-flex align-items-center flex-nowrap pt-3 pt-lg-0 ms-lg-2">
+        <a routerLink="/contact"
+           class="btn btn-secondary py-2 px-4 flex-wrap flex-sm-shrink-0"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarCollapse">
+            Get a Quote
+        </a>
+    </div>
+
+</div>
     </nav>
 </div>
 <!-- Navbar & Hero End -->

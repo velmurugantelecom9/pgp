@@ -16,6 +16,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./component/contact/contact').then(m => m.Contact)
   },
+   {
+    path: 'project',
+    loadComponent: () =>
+      import('./component/project/project').then(m => m.Project)
+  },
      {
     path: 'package',
     loadComponent: () =>

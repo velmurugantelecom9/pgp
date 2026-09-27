@@ -1,4 +1,3 @@
-
 /* ========================================
    PAGE HEADER
 ======================================== */
@@ -94,14 +93,14 @@
 /* Hover */
 
 .breadcrumb-item a:hover {
-  color: #ff5e14;
+  color: var(--bs-secondary);
 }
 
 
 /* Active */
 
 .breadcrumb-item.active {
-  color: #ff5e14;
+  color: var(--bs-secondary);
 }
 
 
@@ -169,6 +168,7 @@
   }
 }
 
+
 /* =====================================
    PRICING SECTION
 ===================================== */
@@ -191,7 +191,7 @@
     display: inline-block;
     margin-bottom: 12px;
 
-    color: #ff5e14;
+    color: var(--bs-secondary);
 
     font-size: 14px;
     font-weight: 800;
@@ -209,7 +209,7 @@
 }
 
 .pricing-heading h2 span {
-    color: #ff5e14;
+    color: var(--bs-secondary);
 }
 
 .pricing-heading p {
@@ -259,7 +259,7 @@
 .price-card:hover {
     transform: translateY(-8px);
 
-    border-color: #ff5e14;
+    border-color: var(--bs-secondary);
 
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.11);
 }
@@ -281,7 +281,7 @@
 
     border-radius: 12px;
 
-    color: #ff5e14;
+    color: var(--bs-secondary);
 
     font-size: 23px;
 }
@@ -360,10 +360,10 @@
 
     padding: 13px 15px;
 
-    border: 1px solid #ff5e14;
+    border: 1px solid var(--bs-secondary);
     border-radius: 6px;
 
-    color: #ff5e14;
+    color: var(--bs-secondary);
 
     font-size: 14px;
     font-weight: 700;
@@ -376,7 +376,7 @@
 
 
 .package-btn:hover {
-    background: #ff5e14;
+    background: var(--bs-secondary);
 
     color: #ffffff;
 }
@@ -387,7 +387,7 @@
 ===================================== */
 
 .price-card.popular {
-    border: 2px solid #ff5e14;
+    border: 2px solid var(--bs-secondary);
 
     transform: translateY(-10px);
 }
@@ -406,7 +406,7 @@
 
     padding: 8px 15px;
 
-    background: #ff5e14;
+    background: var(--bs-secondary);
 
     border-radius: 0 12px 0 12px;
 
@@ -420,14 +420,14 @@
 
 
 .popular .package-icon {
-    background: #ff5e14;
+    background: var(--bs-secondary);
 
     color: #ffffff;
 }
 
 
 .popular .package-btn {
-    background: #ff5e14;
+    background: var(--bs-secondary);
 
     color: #ffffff;
 }
@@ -473,7 +473,7 @@
 
     margin-bottom: 5px;
 
-    color: #ff5e14;
+    color: var(--bs-secondary);
 
     font-size: 12px;
     font-weight: 800;
@@ -574,7 +574,7 @@
 /* Premium column */
 
 .comparison-table thead .premium-column {
-    background: #ff5e14;
+    background: var(--bs-secondary);
 }
 
 
@@ -607,7 +607,7 @@
 .section-row i {
     width: 32px;
 
-    color: #ff5e14;
+    color: var(--bs-secondary);
 
     font-size: 16px;
 }

@@ -7,7 +7,7 @@
 }
 
 .service .text-secondary {
-  color: #ff5e14 !important;
+  color: var(--bs-secondary) !important;
   font-weight: 600;
   letter-spacing: 2px;
 }
@@ -95,7 +95,7 @@
   align-items: center;
   justify-content: center;
 
-  background: #ff5e14 !important;
+  background: var(--bs-secondary) !important;
 }
 
 .service-title i {
@@ -152,7 +152,7 @@
 
   border-radius: 50%;
 
-  background: #ff5e14 !important;
+  background: var(--bs-secondary) !important;
 
   margin-bottom: 10px;
 }
@@ -172,7 +172,7 @@
 }
 
 .service-content > a.fs-4:hover {
-  color: #ff5e14;
+  color: var(--bs-secondary);
 }
 
 
@@ -190,8 +190,8 @@
 ========================= */
 
 .service .btn-secondary {
-  background: #ff5e14;
-  border-color: #ff5e14;
+  background: var(--bs-secondary);
+  border-color: var(--bs-secondary);
   color: #ffffff;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -254,6 +254,7 @@
   }
 
 }
+
 
 /* ========================================
    PAGE HEADER
@@ -350,14 +351,14 @@
 /* Hover */
 
 .breadcrumb-item a:hover {
-  color: #ff5e14;
+  color: var(--bs-secondary);
 }
 
 
 /* Active */
 
 .breadcrumb-item.active {
-  color: #ff5e14;
+  color: var(--bs-secondary);
 }
 
 

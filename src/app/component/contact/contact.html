@@ -71,208 +71,244 @@
                     </div>
 
 
-                    <form>
+           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
-                        <div class="row g-4">
+    <div class="row g-4">
 
-                            <!-- Name -->
-                            <div class="col-md-6">
+        <!-- Name -->
+        <div class="col-md-6">
+            <div class="form-group">
 
-                                <div class="form-group">
+                <label for="name">Your Name</label>
 
-                                    <label for="name">
-                                        Your Name
-                                    </label>
+                <div class="input-box">
+                    <i class="fas fa-user"></i>
 
-                                    <div class="input-box">
+                    <input
+                        type="text"
+                        id="name"
+                        class="form-control"
+                        formControlName="name"
+                        placeholder="Enter your name">
+                </div>
 
-                                        <i class="fas fa-user"></i>
+                <small class="text-danger"
+                    *ngIf="f['name'].touched && f['name'].errors?.['required']">
+                    Name is required
+                </small>
 
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            class="form-control"
-                                            placeholder="Enter your name">
+                <small class="text-danger"
+                    *ngIf="f['name'].touched && f['name'].errors?.['minlength']">
+                    Enter at least 3 characters
+                </small>
 
-                                    </div>
+            </div>
+        </div>
 
-                                </div>
 
-                            </div>
+        <!-- Phone -->
+        <div class="col-md-6">
+            <div class="form-group">
 
+                <label for="phone">Phone Number</label>
 
-                            <!-- Phone -->
-                            <div class="col-md-6">
+                <div class="input-box">
+                    <i class="fas fa-phone-alt"></i>
 
-                                <div class="form-group">
+                    <input
+                        type="tel"
+                        id="phone"
+                        class="form-control"
+                        formControlName="phone"
+                        maxlength="10"
+                        inputmode="numeric"
+                        placeholder="Enter phone number">
+                </div>
 
-                                    <label for="phone">
-                                        Phone Number
-                                    </label>
+                <small class="text-danger"
+                    *ngIf="f['phone'].touched && f['phone'].errors?.['required']">
+                    Phone number is required
+                </small>
 
-                                    <div class="input-box">
+                <small class="text-danger"
+                    *ngIf="f['phone'].touched && f['phone'].errors?.['pattern']">
+                    Enter a valid 10 digit mobile number
+                </small>
 
-                                        <i class="fas fa-phone-alt"></i>
+            </div>
+        </div>
 
-                                        <input
-                                            type="tel"
-                                            id="phone"
-                                            class="form-control"
-                                            placeholder="Enter phone number">
 
-                                    </div>
+        <!-- Email -->
+        <div class="col-md-6">
+            <div class="form-group">
 
-                                </div>
+                <label for="email">Email Address</label>
 
-                            </div>
+                <div class="input-box">
+                    <i class="fas fa-envelope"></i>
 
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        formControlName="email"
+                        placeholder="Enter email address">
+                </div>
 
-                            <!-- Email -->
-                            <div class="col-md-6">
+                <small class="text-danger"
+                    *ngIf="f['email'].touched && f['email'].errors?.['required']">
+                    Email is required
+                </small>
 
-                                <div class="form-group">
+                <small class="text-danger"
+                    *ngIf="f['email'].touched && f['email'].errors?.['email']">
+                    Enter a valid email address
+                </small>
 
-                                    <label for="email">
-                                        Email Address
-                                    </label>
+            </div>
+        </div>
 
-                                    <div class="input-box">
 
-                                        <i class="fas fa-envelope"></i>
+        <!-- Project Type -->
+        <div class="col-md-6">
+            <div class="form-group">
 
-                                        <input
-                                            type="email"
-                                            id="email"
-                                            class="form-control"
-                                            placeholder="Enter email address">
+                <label for="project">Project Type</label>
 
-                                    </div>
+                <div class="input-box">
 
-                                </div>
+                    <i class="fas fa-building"></i>
 
-                            </div>
+                    <select
+                        id="project"
+                        class="form-control"
+                        formControlName="projectType">
 
+                        <option value="">
+                            Select project type
+                        </option>
 
-                            <!-- Project Type -->
-                            <div class="col-md-6">
+                        <option value="Residential Construction">
+                            Residential Construction
+                        </option>
 
-                                <div class="form-group">
+                        <option value="Commercial Construction">
+                            Commercial Construction
+                        </option>
 
-                                    <label for="project">
-                                        Project Type
-                                    </label>
+                        <option value="Renovation">
+                            Renovation
+                        </option>
 
-                                    <div class="input-box">
+                        <option value="Interior Work">
+                            Interior Work
+                        </option>
 
-                                        <i class="fas fa-building"></i>
+                        <option value="Building Planning & Design">
+                            Building Planning & Design
+                        </option>
 
-                                        <select
-                                            id="project"
-                                            class="form-control">
+                        <option value="Interlock Paver Block">
+                            Interlock Paver Block
+                        </option>
 
-                                            <option value="">
-                                                Select project type
-                                            </option>
+                        <option value="Other">
+                            Other
+                        </option>
 
-                                            <option value="residential">
-                                                Residential Construction
-                                            </option>
+                    </select>
 
-                                            <option value="commercial">
-                                                Commercial Construction
-                                            </option>
+                </div>
 
-                                            <option value="renovation">
-                                                Renovation
-                                            </option>
+                <small class="text-danger"
+                    *ngIf="f['projectType'].touched && f['projectType'].errors?.['required']">
+                    Please select project type
+                </small>
 
-                                            <option value="interior">
-                                                Interior Work
-                                            </option>
+            </div>
+        </div>
 
-                                            <option value="other">
-                                                Other
-                                            </option>
 
-                                        </select>
+        <!-- Message -->
+        <div class="col-12">
+            <div class="form-group">
 
-                                    </div>
+                <label for="message">Your Message</label>
 
-                                </div>
+                <div class="input-box textarea-box">
 
-                            </div>
+                    <i class="fas fa-comment-alt"></i>
 
+                    <textarea
+                        id="message"
+                        class="form-control"
+                        rows="6"
+                        formControlName="message"
+                        placeholder="Tell us about your construction requirement">
+                    </textarea>
 
-                            <!-- Subject -->
-                            <div class="col-12">
+                </div>
 
-                                <div class="form-group">
+                <small class="text-danger"
+                    *ngIf="f['message'].touched && f['message'].errors?.['required']">
+                    Message is required
+                </small>
 
-                                    <label for="subject">
-                                        Subject
-                                    </label>
+                <small class="text-danger"
+                    *ngIf="f['message'].touched && f['message'].errors?.['minlength']">
+                    Enter at least 10 characters
+                </small>
 
-                                    <div class="input-box">
+            </div>
+        </div>
 
-                                        <i class="fas fa-pen"></i>
 
-                                        <input
-                                            type="text"
-                                            id="subject"
-                                            class="form-control"
-                                            placeholder="Enter subject">
+        <!-- Button -->
+        <div class="col-12">
 
-                                    </div>
+            <button
+                type="submit"
+                class="btn-send"
+                [disabled]="isSending">
 
-                                </div>
+                <span *ngIf="!isSending">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </span>
 
-                            </div>
+                <span *ngIf="isSending">
+                    Sending...
+                </span>
 
+            </button>
 
-                            <!-- Message -->
-                            <div class="col-12">
+        </div>
 
-                                <div class="form-group">
 
-                                    <label for="message">
-                                        Your Message
-                                    </label>
+        <!-- Success -->
+        <div class="col-12" *ngIf="successMessage">
 
-                                    <div class="input-box textarea-box">
+            <div class="alert alert-success">
+                <i class="fas fa-check-circle me-2"></i>
+                {{ successMessage }}
+            </div>
 
-                                        <i class="fas fa-comment-alt"></i>
+        </div>
 
-                                        <textarea
-                                            id="message"
-                                            class="form-control"
-                                            rows="6"
-                                            placeholder="Tell us about your construction requirement"></textarea>
 
-                                    </div>
+        <!-- Error -->
+        <div class="col-12" *ngIf="errorMessage">
 
-                                </div>
+            <div class="alert alert-danger">
+                {{ errorMessage }}
+            </div>
 
-                            </div>
+        </div>
 
+    </div>
 
-                            <!-- Submit -->
-                            <div class="col-12">
-
-                                <button
-                                    type="submit"
-                                    class="btn-send">
-
-                                    Send Message
-
-                                    <i class="fas fa-paper-plane"></i>
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </form>
+</form>
 
                 </div>
 

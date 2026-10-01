@@ -1,202 +1,140 @@
-/* ========================================
+/* =====================================================
    PAGE HEADER
-======================================== */
+===================================================== */
 
 .page-header {
-  position: relative;
-  width: 100%;
-  min-height: 330px;
+    position: relative;
 
-  background-image: url('/img/new/carousel-1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    width: 100%;
+    min-height: 330px;
+
+    background-image: url('/img/new/carousel-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-
-/* Dark overlay */
 
 .page-header-overlay {
-  width: 100%;
-  min-height: 330px;
+    width: 100%;
+    min-height: 330px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  background: rgba(15, 23, 32, 0.75);
+    background: rgba(15, 23, 32, 0.75);
 }
 
-
-/* Content */
 
 .page-header-content {
-  text-align: center;
-  padding: 70px 20px;
+    padding: 70px 20px;
+
+    text-align: center;
 }
 
-
-/* ========================================
-   TITLE
-======================================== */
 
 .page-title {
-  margin: 0 0 22px;
+    margin: 0 0 22px;
 
-  color: #ffffff;
+    color: #ffffff;
 
-  font-size: 52px;
-  font-weight: 700;
-  line-height: 1.2;
-
-  text-transform: capitalize;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 
-/* ========================================
+
+/* =====================================================
    BREADCRUMB
-======================================== */
+===================================================== */
 
 .breadcrumb {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 
-  list-style: none;
-  background: transparent;
+    list-style: none;
+
+    background: transparent;
 }
 
-
-/* Individual item */
 
 .breadcrumb-item {
-  font-size: 16px;
-  font-weight: 500;
-  color: #ffffff;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 500;
 }
 
-
-/* Link */
 
 .breadcrumb-item a {
-  color: #ffffff;
-  text-decoration: none;
+    color: #ffffff;
 
-  transition: color 0.3s ease;
+    text-decoration: none;
+
+    transition: 0.3s;
 }
 
-
-/* Hover */
 
 .breadcrumb-item a:hover {
-  color: var(--bs-secondary);
+    color: var(--bs-secondary);
 }
 
-
-/* Active */
 
 .breadcrumb-item.active {
-  color: var(--bs-secondary);
+    color: var(--bs-secondary);
 }
 
-
-/* Separator */
 
 .breadcrumb-item + .breadcrumb-item::before {
-  content: "/";
-  color: rgba(255, 255, 255, 0.7);
+    content: "/";
 
-  padding: 0 12px;
+    padding: 0 12px;
+
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
-/* ========================================
-   RESPONSIVE - TABLET
-======================================== */
 
-@media (max-width: 768px) {
-
-  .page-header,
-  .page-header-overlay {
-    min-height: 270px;
-  }
-
-  .page-header-content {
-    padding: 55px 15px;
-  }
-
-  .page-title {
-    font-size: 40px;
-  }
-
-  .breadcrumb-item {
-    font-size: 15px;
-  }
-}
-
-
-/* ========================================
-   RESPONSIVE - MOBILE
-======================================== */
-
-@media (max-width: 576px) {
-
-  .page-header,
-  .page-header-overlay {
-    min-height: 220px;
-  }
-
-  .page-header-content {
-    padding: 45px 10px;
-  }
-
-  .page-title {
-    font-size: 32px;
-    margin-bottom: 16px;
-  }
-
-  .breadcrumb-item {
-    font-size: 14px;
-  }
-
-  .breadcrumb-item + .breadcrumb-item::before {
-    padding: 0 8px;
-  }
-}
-
-
-/* =====================================
+/* =====================================================
    PRICING SECTION
-===================================== */
+===================================================== */
 
 .pricing-section {
     padding: 90px 0;
+
     background: #f7f8fa;
 }
 
 
-/* Heading */
-
 .pricing-heading {
     max-width: 850px;
+
     margin: 0 auto 55px;
+
     text-align: center;
 }
 
+
 .small-title {
     display: inline-block;
+
     margin-bottom: 12px;
 
     color: var(--bs-secondary);
 
     font-size: 14px;
     font-weight: 800;
+
     letter-spacing: 2px;
 }
+
 
 .pricing-heading h2 {
     margin-bottom: 18px;
@@ -208,12 +146,15 @@
     line-height: 1.2;
 }
 
+
 .pricing-heading h2 span {
     color: var(--bs-secondary);
 }
 
+
 .pricing-heading p {
     max-width: 680px;
+
     margin: auto;
 
     color: #6c757d;
@@ -223,9 +164,10 @@
 }
 
 
-/* =====================================
-   PACKAGE CARDS
-===================================== */
+
+/* =====================================================
+   DESKTOP PACKAGE CARDS
+===================================================== */
 
 .package-cards {
     display: grid;
@@ -250,7 +192,8 @@
     border: 1px solid #e9e9e9;
     border-radius: 14px;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.06);
 
     transition: all 0.35s ease;
 }
@@ -261,11 +204,10 @@
 
     border-color: var(--bs-secondary);
 
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.11);
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.11);
 }
 
-
-/* Icon */
 
 .package-icon {
     width: 58px;
@@ -306,8 +248,6 @@
 }
 
 
-/* Price */
-
 .price {
     display: flex;
     align-items: baseline;
@@ -317,6 +257,7 @@
     color: #142033;
 }
 
+
 .rupee {
     margin-right: 3px;
 
@@ -324,10 +265,12 @@
     font-weight: 700;
 }
 
+
 .price strong {
     font-size: 36px;
     font-weight: 800;
 }
+
 
 .sqft {
     margin-left: 6px;
@@ -350,8 +293,6 @@
     line-height: 1.7;
 }
 
-
-/* Button */
 
 .package-btn {
     width: 100%;
@@ -382,9 +323,10 @@
 }
 
 
-/* =====================================
-   POPULAR CARD
-===================================== */
+
+/* =====================================================
+   POPULAR DESKTOP CARD
+===================================================== */
 
 .price-card.popular {
     border: 2px solid var(--bs-secondary);
@@ -440,9 +382,10 @@
 }
 
 
-/* =====================================
-   COMPARISON CONTAINER
-===================================== */
+
+/* =====================================================
+   DESKTOP COMPARISON
+===================================================== */
 
 .comparison-wrapper {
     overflow: hidden;
@@ -451,7 +394,8 @@
 
     border-radius: 14px;
 
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.07);
 }
 
 
@@ -477,6 +421,7 @@
 
     font-size: 12px;
     font-weight: 800;
+
     letter-spacing: 1.5px;
 }
 
@@ -503,10 +448,6 @@
     text-align: right;
 }
 
-
-/* =====================================
-   TABLE
-===================================== */
 
 .table-scroll {
     width: 100%;
@@ -571,8 +512,6 @@
 }
 
 
-/* Premium column */
-
 .comparison-table thead .premium-column {
     background: var(--bs-secondary);
 }
@@ -583,8 +522,6 @@
 }
 
 
-/* Category */
-
 .section-row td {
     padding: 15px 22px;
 
@@ -593,7 +530,6 @@
     color: #142033 !important;
 
     font-size: 14px;
-
     font-weight: 800;
 
     text-align: left !important;
@@ -612,8 +548,6 @@
     font-size: 16px;
 }
 
-
-/* Check */
 
 .check {
     width: 21px;
@@ -636,75 +570,532 @@
 }
 
 
-/* Row Hover */
+.comparison-table tbody
+tr:not(.section-row):hover td {
 
-.comparison-table tbody tr:not(.section-row):hover td {
     background: #fffaf7;
 }
 
 
-/* =====================================
-   RESPONSIVE
-===================================== */
 
-@media (max-width: 1199px) {
+/* =====================================================
+   MOBILE PACKAGE SECTION
+   HIDDEN ON DESKTOP
+===================================================== */
+
+.mobile-packages {
+    display: none;
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1199px) and (min-width: 768px) {
 
     .package-cards {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
     .price-card.popular {
         transform: none;
     }
 
+
     .price-card.popular:hover {
         transform: translateY(-8px);
     }
+
 }
 
 
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
 @media (max-width: 767px) {
 
-    .pricing-section {
-        padding: 60px 12px;
+
+    /* -----------------------------------------
+       HEADER
+    ----------------------------------------- */
+
+    .page-header,
+    .page-header-overlay {
+        min-height: 210px;
     }
+
+
+    .page-header-content {
+        padding: 40px 10px;
+    }
+
+
+    .page-title {
+        margin-bottom: 15px;
+
+        font-size: 31px;
+    }
+
+
+    .breadcrumb-item {
+        font-size: 13px;
+    }
+
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        padding: 0 7px;
+    }
+
+
+
+    /* -----------------------------------------
+       MAIN SECTION
+    ----------------------------------------- */
+
+    .pricing-section {
+        padding: 50px 0;
+    }
+
+
+    .pricing-section .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
 
     .pricing-heading {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
+
+
+    .small-title {
+        margin-bottom: 8px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.4px;
+    }
+
 
     .pricing-heading h2 {
-        font-size: 32px;
+        margin-bottom: 12px;
+
+        font-size: 28px;
+        line-height: 1.25;
     }
 
-    .package-cards {
-        grid-template-columns: 1fr;
 
-        gap: 18px;
+    .pricing-heading p {
+        padding: 0 5px;
+
+        font-size: 13px;
+        line-height: 1.65;
     }
 
-    .price-card {
-        padding: 30px 25px;
+
+
+    /* -----------------------------------------
+       DESKTOP CONTENT HIDE
+    ----------------------------------------- */
+
+    .desktop-package-cards,
+    .desktop-comparison {
+
+        display: none;
     }
 
-    .comparison-title {
+
+
+    /* -----------------------------------------
+       MOBILE PACKAGES SHOW
+    ----------------------------------------- */
+
+    .mobile-packages {
+        display: block;
+    }
+
+
+
+    /* =================================================
+       FULL PACKAGE CARD
+    ================================================= */
+
+    .mobile-package-card {
+        position: relative;
+
+        width: 100%;
+
+        margin-bottom: 24px;
+        padding: 20px 17px;
+
+        overflow: hidden;
+
+        background: #ffffff;
+
+        border: 1px solid #e6e8eb;
+        border-radius: 16px;
+
+        box-shadow:
+            0 7px 24px rgba(20, 32, 51, 0.07);
+    }
+
+
+    .mobile-package-card:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+    /* -----------------------------------------
+       CARD HEADER
+    ----------------------------------------- */
+
+    .mobile-card-top {
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+
+        padding-right: 5px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .mobile-card-icon {
+        width: 48px;
+        height: 48px;
+
+        flex: 0 0 48px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #fff2eb;
+
+        border-radius: 11px;
+
+        color: var(--bs-secondary);
+
+        font-size: 19px;
+    }
+
+
+    .mobile-card-name {
+        min-width: 0;
+    }
+
+
+    .mobile-card-name span {
         display: block;
 
-        padding: 25px 20px;
+        margin-bottom: 2px;
+
+        color: #91969d;
+
+        font-size: 9px;
+        font-weight: 800;
+
+        letter-spacing: 0.9px;
     }
 
-    .comparison-title h3 {
-        font-size: 22px;
+
+    .mobile-card-name h3 {
+        margin: 0;
+
+        color: #142033;
+
+        font-size: 23px;
+        font-weight: 800;
     }
 
-    .comparison-title p {
-        margin-top: 10px;
 
-        text-align: left;
+
+    /* -----------------------------------------
+       PRICE
+    ----------------------------------------- */
+
+    .mobile-card-price {
+        display: flex;
+        align-items: baseline;
+
+        margin-bottom: 10px;
+
+        color: #142033;
     }
 
-    .comparison-table th,
-    .comparison-table td {
-        padding: 16px;
+
+    .mobile-rupee {
+        margin-right: 2px;
+
+        font-size: 18px;
+        font-weight: 700;
     }
+
+
+    .mobile-card-price strong {
+        font-size: 31px;
+        font-weight: 800;
+
+        line-height: 1;
+    }
+
+
+    .mobile-sqft {
+        margin-left: 5px;
+
+        color: #7b8087;
+
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+
+    .mobile-card-description {
+        margin: 0 0 18px;
+
+        color: #747a82;
+
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+
+
+    /* =================================================
+       DETAIL SECTIONS
+    ================================================= */
+
+    .mobile-detail-section {
+        margin-bottom: 15px;
+    }
+
+
+    .mobile-detail-title {
+        display: flex;
+        align-items: center;
+
+        gap: 8px;
+
+        padding: 9px 10px;
+
+        background: #f4f5f7;
+
+        border-radius: 7px;
+    }
+
+
+    .mobile-detail-title i {
+        color: var(--bs-secondary);
+
+        font-size: 12px;
+    }
+
+
+    .mobile-detail-title span {
+        color: #142033;
+
+        font-size: 11px;
+        font-weight: 800;
+
+        letter-spacing: 0.3px;
+
+        text-transform: uppercase;
+    }
+
+
+
+    /* -----------------------------------------
+       DETAIL ROW
+    ----------------------------------------- */
+
+    .mobile-detail-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        gap: 12px;
+
+        padding: 10px 5px;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+
+    .mobile-detail-row:last-child {
+        border-bottom: none;
+    }
+
+
+    .mobile-detail-row > span {
+        flex: 0 0 35%;
+
+        color: #7d8289;
+
+        font-size: 11px;
+        font-weight: 600;
+
+        line-height: 1.45;
+    }
+
+
+    .mobile-detail-row > strong {
+        flex: 1;
+
+        color: #293441;
+
+        font-size: 11px;
+        font-weight: 700;
+
+        line-height: 1.45;
+
+        text-align: right;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    .mobile-detail-row .green-value {
+        color: #198754;
+    }
+
+
+
+    /* =================================================
+       GET QUOTE BUTTON
+    ================================================= */
+
+    .mobile-get-quote {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+
+        margin-top: 18px;
+
+        padding: 12px 15px;
+
+        border: 1px solid var(--bs-secondary);
+        border-radius: 7px;
+
+        color: var(--bs-secondary);
+
+        font-size: 12px;
+        font-weight: 800;
+
+        text-decoration: none;
+
+        transition: 0.3s;
+    }
+
+
+    .mobile-get-quote:active {
+        background: var(--bs-secondary);
+
+        color: #ffffff;
+    }
+
+
+
+    /* =================================================
+       PREMIUM MOBILE CARD
+    ================================================= */
+
+    .mobile-package-card.mobile-premium {
+        border: 2px solid var(--bs-secondary);
+
+        box-shadow:
+            0 9px 28px rgba(0, 0, 0, 0.09);
+    }
+
+
+    .mobile-premium .mobile-card-icon {
+        background: var(--bs-secondary);
+
+        color: #ffffff;
+    }
+
+
+    .mobile-popular-label {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        padding: 6px 10px;
+
+        background: var(--bs-secondary);
+
+        border-radius: 0 14px 0 10px;
+
+        color: #ffffff;
+
+        font-size: 8px;
+        font-weight: 800;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    .premium-quote {
+        background: var(--bs-secondary);
+
+        color: #ffffff;
+    }
+
+}
+
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .pricing-section .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .pricing-heading h2 {
+        font-size: 25px;
+    }
+
+
+    .mobile-package-card {
+        padding: 18px 14px;
+    }
+
+
+    .mobile-card-name h3 {
+        font-size: 21px;
+    }
+
+
+    .mobile-card-price strong {
+        font-size: 28px;
+    }
+
+
+    .mobile-detail-row {
+        gap: 8px;
+    }
+
+
+    .mobile-detail-row > span,
+    .mobile-detail-row > strong {
+        font-size: 10.5px;
+    }
+
 }
